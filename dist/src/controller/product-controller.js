@@ -5,6 +5,7 @@ const product_service_1 = require("../service/product-service");
 class ProductController {
     constructor() {
         this.getAll = async (req, res) => {
+            console.log(2);
             let products = await this.productService.findAll();
             return res.status(200).json(products);
         };

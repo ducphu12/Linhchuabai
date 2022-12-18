@@ -7,6 +7,6 @@ export const AppDataSource = new DataSource({
     username: "root",
     password: "12345678",
     database: "manager",
-    synchronize: true,
-    entities: ["dist/src/entity/*.js"],
+    synchronize: false,
+    entities: ["dist/src/model/*.js"],
 })
